@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: black;
+}
+section{
+    min-height: 100vh;
+    display: grid;
+    object-position: center;
+}
+.main{
+    color: white;
+    text-align: center;
+    line-height: 2cm;
+    font-size: 2cm;
+    align-content: center;
+}
+.logo{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.logo1{
+    z-index: 3;
+    height:15cm;
+    width: 20cm;
+    left: 0;
+    margin-top: 13cm;
+}
+.logo2{
+    border: 1px solid black;
+    margin-top: 4cm;
+    height: 300px;
+    width: 500px;
+    margin-left: 30vh;
+}
+.hidden{
+    opacity: 0;
+    transform: translateY(100%);
+    filter: blur(5px);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+#para1{
+    z-index: inherit;
+    font-size: 0.5cm;
+    color: white;
+    margin-left: 1.5cm;
+    display:flexbox;
+    width: 70vh;
+    height: 50vh;
+    margin-top: -100vh;
+    margin-left: 1.3cm;
+}
+#para2{
+    z-index: inherit;
+    font-size: 0.5cm;
+    color: white;
+    margin-left: 1.5cm;
+    display:flexbox;
+    width: 70vh;
+    height: 50vh;
+    margin-top: 8vh;
+    margin-left: 95vh;
+}
+@media(max-width:500px){
+    .main h1{
+        flex-direction: column;
+        font-size: 1.5cm;
+    }
+    .logo1{
+        flex-direction: column;
+        height: 8cm;
+        width: 10cm;
+    }
+    .logo2{
+        flex-direction: column;
+        height: 6cm;
+        width: 10cm;
+        margin-left: -10cm;
+        margin-top: 5cm;
+    }
+    #para1{
+        position:absolute;
+        margin-left: 1cm;
+        height: 5cm;
+        width: 7cm;
+    }
+    #para2{
+        margin-left: 1cm;
+        height: 5cm;
+        width: 7cm;
+        margin-top: 1cm;
+    }
+}
